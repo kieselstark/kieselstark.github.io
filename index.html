@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Karsten Steinberg – Investmentprofi</title>
-  <meta name="description" content="Karsten Steinberg: über 30 Jahre Investmentprofi, davon 16 Jahre bei Credit Suisse in Zürich als Fondsmanager und Senior Portfolio Manager. Projekte rund um Edelmetalle und Investments.">
+  <meta name="description" content="Karsten Steinberg: über 30 Jahre Investmentprofi, 16 Jahre Asset Management bei Credit Suisse in Zürich – Fonds, Mandate und Strategien für sehr vermögende Kunden.">
   <meta property="og:title" content="Karsten Steinberg – Investmentprofi">
   <meta property="og:description" content="Über 30 Jahre Investmentprofi, 16 Jahre Credit Suisse. Freiheit und Abenteuer.">
   <meta property="og:image" content="https://kieselstark.github.io/JPEG-Bild.jpeg">
@@ -119,19 +119,30 @@
     }
     .section p + p { margin-top: 12px; }
     .section::after { content: ''; display: block; clear: both; }
-    .facts { margin: 12px 0 0 20px; }
-    .facts li { margin-bottom: 8px; }
-    .facts strong { color: #0f2c26; }
-    blockquote {
-      margin-top: 18px;
-      padding: 14px 18px;
-      background: #f7f5ec;
-      border-left: 4px solid #f4a261;
-      border-radius: 6px;
-      font-style: italic;
-      color: #444;
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin-bottom: 18px;
     }
-    blockquote cite { display: block; margin-top: 6px; font-style: normal; font-size: .85em; color: #777; }
+    .stat {
+      background: #0f2c26;
+      color: #fff;
+      border-radius: 10px;
+      padding: 16px;
+      text-align: center;
+    }
+    .stat b { display: block; font-size: 1.35em; color: #f4a261; }
+    .stat span { font-size: .88em; opacity: .9; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    .chips span {
+      padding: 5px 12px;
+      border-radius: 999px;
+      background: #f7f5ec;
+      border: 1px solid #e3dfcc;
+      font-size: .88em;
+      color: #0f2c26;
+    }
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -218,17 +229,16 @@
     </div>
 
     <div class="section">
-      <h2>Beruflicher Hintergrund</h2>
-      <p><strong>Credit Suisse, Zürich · 2002–2018</strong> – Vice President und Direktionsmitglied</p>
-      <ul class="facts">
-        <li><strong>Fondsmanager</strong> des Fixed-Income-Dachfonds „Credit Suisse Nova (Lux) Enhanced Fixed Income“ und des Aktien-Dachfonds „CSA Fund Selection Equity Europe“; verantwortlich für die Best-in-Class-Fondsselektion Aktien Europa</li>
-        <li><strong>Multi-Asset-Mandate und -Fonds</strong> (Triamant, Privilege) in verschiedenen Risikoprofilen und Referenzwährungen</li>
-        <li><strong>Senior Portfolio Manager Premium Mandates</strong> (2011–2017): Management und Performanceverantwortung für Vermögensverwaltungsmandate von UHNWI-Kunden</li>
-        <li><strong>Senior Portfolio Manager Benchmark-oriented Portfolios</strong> (2017–2018): Restrukturierung der Premium-Modellportfolios</li>
-        <li><strong>Eigene Tools &amp; Strategien:</strong> Portfoliomanagement-Applikation „SaPeA“, Options- und Stop-Loss-Strategien im Charles River IMS, Risikomonitoring der Kundenportfolios</li>
-        <li><strong>Programmierung:</strong> SQL, R, VBA</li>
-      </ul>
-      <blockquote>„… das Zeugnis eines äusserst selbstständigen und kundenorientierten Direktionsmitglieds … erbrachte sowohl qualitativ als auch quantitativ jederzeit sehr gute Leistungen.“<cite>Arbeitszeugnis Credit Suisse AG, 2018</cite></blockquote>
+      <h2>Asset Management – Swiss Made</h2>
+      <div class="stats">
+        <div class="stat"><b>16 Jahre</b><span>Credit Suisse, Zürich</span></div>
+        <div class="stat"><b>Fonds &amp; Mandate</b><span>Multi-Asset, Aktien, Fixed Income</span></div>
+        <div class="stat"><b>UHNWI</b><span>Vermögensverwaltung für sehr vermögende Kunden</span></div>
+      </div>
+      <p>Von 2002 bis 2018 habe ich in Zürich Fonds gemanagt, Vermögensverwaltungsmandate für anspruchsvolle Privatkunden gesteuert und Anlagestrategien entwickelt – vom Dachfonds bis zur Optionsstrategie. Meine Handschrift: Märkte verstehen, Chancen früh erkennen und Portfolios mit eigenen, datengetriebenen Tools steuern.</p>
+      <div class="chips">
+        <span>Fondsmanagement</span><span>Multi-Asset</span><span>Fondsselektion</span><span>Portfoliokonstruktion</span><span>Optionsstrategien</span><span>Risikomanagement</span><span>Quant &amp; Programmierung</span>
+      </div>
     </div>
 
     <div class="section">
