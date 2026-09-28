@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Karsten Steinberg – Investmentprofi, Selbstversorger, Freidenker</title>
-  <meta name="description" content="Karsten Steinberg: über 30 Jahre Investmentprofi (Köpenicker Bank, Berliner Volksbank, Credit Suisse), heute Selbstversorger in Georgien. Projekte rund um Edelmetalle, Bitcoin und Freiheit.">
-  <meta property="og:title" content="Karsten Steinberg – Investmentprofi, Selbstversorger, Freidenker">
-  <meta property="og:description" content="Über 30 Jahre Investmentprofi, heute Selbstversorger in Georgien. Freiheit und Abenteuer.">
+  <title>Karsten Steinberg – Investmentprofi</title>
+  <meta name="description" content="Karsten Steinberg: über 30 Jahre Investmentprofi, mehrjährig im Schweizer Asset Management – Vorsorgegelder, Fonds, Mandate und Strategien für sehr vermögende Kunden.">
+  <meta property="og:title" content="Karsten Steinberg – Investmentprofi">
+  <meta property="og:description" content="Über 30 Jahre Investmentprofi, Asset Management – Swiss Made. Freiheit und Abenteuer.">
   <meta property="og:image" content="https://kieselstark.github.io/JPEG-Bild.jpeg">
   <meta property="og:url" content="https://kieselstark.github.io/">
   <meta property="og:type" content="profile">
@@ -119,22 +119,30 @@
     }
     .section p + p { margin-top: 12px; }
     .section::after { content: ''; display: block; clear: both; }
-    .timeline { list-style: none; margin-top: 5px; }
-    .timeline li {
-      padding: 10px 0 10px 18px;
-      border-left: 3px solid #f4a261;
-      position: relative;
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin-bottom: 18px;
     }
-    .timeline li::before {
-      content: '';
-      position: absolute;
-      left: -8px; top: 16px;
-      width: 13px; height: 13px;
-      border-radius: 50%;
+    .stat {
       background: #0f2c26;
+      color: #fff;
+      border-radius: 10px;
+      padding: 16px;
+      text-align: center;
     }
-    .timeline strong { color: #0f2c26; }
-    .timeline span { display: block; color: #666; font-size: .95em; }
+    .stat b { display: block; font-size: 1.35em; color: #f4a261; }
+    .stat span { font-size: .88em; opacity: .9; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    .chips span {
+      padding: 5px 12px;
+      border-radius: 999px;
+      background: #f7f5ec;
+      border: 1px solid #e3dfcc;
+      font-size: .88em;
+      color: #0f2c26;
+    }
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -209,25 +217,28 @@
 <body>
   <header>
     <h1>Karsten Steinberg</h1>
-    <p class="tagline">CEO meines Lebens | Investmentprofi | Selbstversorger</p>
+    <p class="tagline">CEO meines Lebens | Investmentprofi</p>
   </header>
 
   <div class="content">
     <div class="section">
       <h2>Über mich</h2>
       <img src="JPEG-Bild.jpeg" alt="Karsten Steinberg" class="profile-img">
-      <p>Geboren in (Ost-)Berlin, habe ich mir in über 30 Jahren als Investmentprofi meinen selbstfinanzierten Ruhestand erarbeitet – heute lebe ich als Selbstversorger in der Natur Georgiens.</p>
-      <p>Vegan und ungeimpft führe ich ein Leben der Unabhängigkeit, geleitet von meinem Motto: <strong>Freiheit und Abenteuer.</strong> Murray Rothbards „Anatomie des Staates“ prägt mein Denken, und Bitcoin<img src="Bitcoin.png" alt="" class="bitcoin-icon"> ist für mich die Lösung für alles.</p>
+      <p>Geboren in (Ost-)Berlin, habe ich mir in über 30 Jahren als Investmentprofi meinen selbstfinanzierten Ruhestand erarbeitet.</p>
+      <p>Mein Motto: <strong>Freiheit und Abenteuer.</strong></p>
     </div>
 
     <div class="section">
-      <h2>Werdegang</h2>
-      <ul class="timeline">
-        <li><strong>Köpenicker Bank</strong><span>Berlin</span></li>
-        <li><strong>Berliner Volksbank</strong><span>Berlin</span></li>
-        <li><strong>Credit Suisse</strong><span>Zürich</span></li>
-        <li><strong>Selbstversorger &amp; unabhängiger Investor</strong><span>Georgien</span></li>
-      </ul>
+      <h2>Asset Management – Swiss Made</h2>
+      <div class="stats">
+        <div class="stat"><b>Mehrjährig</b><span>Asset Management in der Schweiz</span></div>
+        <div class="stat"><b>Fonds &amp; Mandate</b><span>Multi-Asset, Aktien, Fixed Income</span></div>
+        <div class="stat"><b>UHNWI</b><span>Vermögensverwaltung für sehr vermögende Kunden</span></div>
+      </div>
+      <p>Über viele Jahre habe ich in der Schweiz Vorsorgegelder und Fonds gemanagt, Vermögensverwaltungsmandate für anspruchsvolle Privatkunden gesteuert und Anlagestrategien entwickelt – vom Dachfonds bis zur Optionsstrategie. Meine Handschrift: Märkte verstehen, Chancen früh erkennen und Portfolios mit teils eigenen, datengetriebenen Tools steuern.</p>
+      <div class="chips">
+        <span>Fondsmanagement</span><span>Multi-Asset</span><span>Fondsselektion</span><span>Portfoliokonstruktion</span><span>Optionsstrategien</span><span>Risikomanagement</span><span>Quant &amp; Programmierung</span>
+      </div>
     </div>
 
     <div class="section">
@@ -258,7 +269,7 @@
 
   <footer>
     <div class="footer-background">
-      <p>© <span id="year">2026</span> Karsten Steinberg | Freiheit durch Code, Natur &amp; Bitcoin<img src="Bitcoin.png" alt="" class="bitcoin-icon"></p>
+      <p>© <span id="year">2026</span> Karsten Steinberg | Freiheit durch Claude-KI und gute Investmententscheidungen</p>
     </div>
   </footer>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
