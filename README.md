@@ -1,2 +1,2 @@
-# home_page
-https://kieselstark.github.io/home_page/
+# kieselstark.github.io
+Persönliche Homepage: https://kieselstark.github.io/
